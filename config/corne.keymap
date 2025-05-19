@@ -9,6 +9,8 @@
   chain-length = <27>;
 };
 
+&rgb_ug RGB_COLOR_HSB(128,100,100);
+
 
 #define TAPPING_TERM 200
 
