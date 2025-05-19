@@ -3,10 +3,21 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
+
+// Configure the RGB effects
 &led_strip {
-  // chain-length = <0>;
-  // 21 backlight + 6 glowlight
-  chain-length = <27>;
+    chain-length = <27>;
+    
+    // Set the initial effect to breathing
+    initial-effect-name = "breathe";
+    
+    // Configure the effects
+    effects {
+        breathe {
+            hsv = <128 255 100>;  // Turquoise color (H=128 is turquoise)
+            speed = <4>;         // Speed of the breathing effect
+        };
+    };
 };
 
 
@@ -139,20 +150,4 @@
       then-layer = <3>;
     };
   };
-};
-
-// Configure the RGB effects
-&led_strip {
-    chain-length = <27>;
-    
-    // Set the initial effect to breathing
-    initial-effect-name = "breathe";
-    
-    // Configure the effects
-    effects {
-        breathe {
-            hsv = <128 255 100>;  // Turquoise color (H=128 is turquoise)
-            speed = <4>;         // Speed of the breathing effect
-        };
-    };
 };
