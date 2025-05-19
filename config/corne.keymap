@@ -72,6 +72,7 @@
     compatible = "zmk,keymap";
 
     default_layer {
+      display-name="BASE";
       // -----------------------------------------------------------------------------------------
       // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
       // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -85,6 +86,7 @@
                               >;
     };
     lower_layer {
+      display-name="LOWER";
       // -----------------------------------------------------------------------------------------
       // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
       // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -99,6 +101,7 @@
     };
 
     raise_layer {
+      display-name="UPPER";
       // -----------------------------------------------------------------------------------------
       // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
       // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -113,7 +116,7 @@
     };
 
     extended_layer {
-      label = "EXT";
+      display-name = "EXTERN";
       bindings = <
 &trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6           &kp F7           &kp F8           &kp F9                &kp F10               &kp F12
 &kp K_PP  &kp K_PREV        &kp K_NEXT     &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans &trans &trans           &trans
