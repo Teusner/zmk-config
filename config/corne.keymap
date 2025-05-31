@@ -113,13 +113,14 @@
                                             &kp ESC  &kp SPACE  &kp LALT  &none       &none              &none
             >;
         };
+    };
 
-        conditional_layers {
-            compatible = "zmk,conditional-layers";
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
 
-            Activate_EXT {
-                if-layers = <1 2>;
-                then-layer = <3>;
-            };
+        Activate_EXT {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
     };
 };
